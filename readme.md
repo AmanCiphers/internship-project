@@ -6,8 +6,9 @@ Full-stack monorepo: **NestJS** backend + **Next.js** frontend, managed with npm
 
 ```
 apps/
-  api/   NestJS backend  (http://localhost:4000)
-  web/   Next.js frontend (http://localhost:3000)
+  api/     NestJS backend  (http://localhost:4000)
+  web/     Next.js frontend (http://localhost:3000)
+  admin/   Next.js admin    (http://localhost:3001)
 ```
 
 ## Getting started
