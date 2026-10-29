@@ -1,0 +1,18 @@
+{
+  "name": "internship-project",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:api dev:web",
+    "dev:api": "npm run start:dev -w @project/api",
+    "dev:web": "npm run dev -w @project/web",
+    "build": "npm run build -w @project/api && npm run build -w @project/web",
+    "lint": "npm run lint -w @project/api && npm run lint -w @project/web"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
