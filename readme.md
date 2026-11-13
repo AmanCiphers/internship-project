@@ -30,3 +30,5 @@ npm run dev
 | `npm run dev:web`| Run only the Next.js frontend     |
 | `npm run build`  | Build both apps                   |
 | `npm run lint`   | Lint both apps                    |
+
+brijesh
