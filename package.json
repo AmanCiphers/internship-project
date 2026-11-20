@@ -6,18 +6,17 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "npm-run-all --parallel dev:api dev:web",
+    "dev": "npm-run-all --parallel dev:api dev:web dev:admin",
     "dev:api": "npm run start:dev -w @project/api",
     "dev:web": "npm run dev -w @project/web",
-    "build": "npm run build -w @project/api && npm run build -w @project/web",
-    "lint": "npm run lint -w @project/api && npm run lint -w @project/web"
+    "dev:admin": "npm run dev -w @project/admin",
+    "build": "npm run build -w @project/api && npm run build -w @project/web && npm run build -w @project/admin",
+    "lint": "npm run lint -w @project/api && npm run lint -w @project/web && npm run lint -w @project/admin"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"
   },
-  "dev:admin": "npm run dev -w @project/admin",
-  "build:admin": "npm run build -w @project/admin",
-  "dev": "\"npm-run-all --parallel dev:api dev:web dev:admin\"",
-  "build": "\"npm run build -w @project/api && npm run build -w @project/web && npm run build -w @project/admin\"",
-  "lint": "\"npm run lint -w @project/api && npm run lint -w @project/web && npm run lint -w @project/admin\""
+  "dependencies": {
+    "nest": "^0.1.6"
+  }
 }

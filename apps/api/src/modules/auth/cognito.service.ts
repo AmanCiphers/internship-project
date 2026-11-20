@@ -13,7 +13,7 @@ import {
   SignUpCommand,
   type AuthenticationResultType,
 } from '@aws-sdk/client-cognito-identity-provider';
-import { optionalEnv, requireEnv } from '../config/env.js';
+import { optionalEnv, requireEnv } from '../../config/env.js';
 
 export interface CognitoTokens {
   accessToken: string;

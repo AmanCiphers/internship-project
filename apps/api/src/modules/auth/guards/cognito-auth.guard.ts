@@ -7,7 +7,7 @@ import {
 import type { Request } from 'express';
 import { CognitoJwtVerifier } from 'aws-jwt-verify';
 import type { CognitoAccessTokenPayload } from 'aws-jwt-verify/jwt-model';
-import { requireEnv } from '../../config/env.js';
+import { requireEnv } from '../../../config/env.js';
 import { extractAccessToken } from '../auth-token.js';
 
 export interface AuthenticatedRequest extends Request {
